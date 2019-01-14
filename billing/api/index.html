@@ -1,0 +1,2734 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell--sandbox&quot;,&quot;shell--production&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" />
+        <span style="color:#fff;">BILLING</span>
+      </div>
+
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell--sandbox">sandbox</a>
+              <a href="#" data-language-name="shell--production">production</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#3394112aa9" class="toc-h1 toc-link" data-title="Введение">Введение</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#301f7fd6c0" class="toc-h2 toc-link" data-title="Среды">Среды</a>
+                  </li>
+                  <li>
+                    <a href="#c0eca9e229" class="toc-h2 toc-link" data-title="Инструменты">Инструменты</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#a1ce3c1a83" class="toc-h1 toc-link" data-title="Аутентификация">Аутентификация</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#ce0c72a11a" class="toc-h2 toc-link" data-title="Регистрация в ЕБС">Регистрация в ЕБС</a>
+                  </li>
+                  <li>
+                    <a href="#cdb759bb11" class="toc-h2 toc-link" data-title="Получение токена">Получение токена</a>
+                  </li>
+                  <li>
+                    <a href="#19fbeae485" class="toc-h2 toc-link" data-title="Восстановление авторизации">Восстановление авторизации</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#9eacb1a1bd" class="toc-h1 toc-link" data-title="Инвойсы">Инвойсы</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#2aab3971be" class="toc-h2 toc-link" data-title="Создания инвойса">Создания инвойса</a>
+                  </li>
+                  <li>
+                    <a href="#a3577b59c9" class="toc-h2 toc-link" data-title="Отмены инвойса">Отмены инвойса</a>
+                  </li>
+                  <li>
+                    <a href="#de128c3897" class="toc-h2 toc-link" data-title="Получить инвойс">Получить инвойс</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ffcdb7836e" class="toc-h1 toc-link" data-title="Плательщики">Плательщики</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#af8e77b30e" class="toc-h2 toc-link" data-title="Создать плательщика">Создать плательщика</a>
+                  </li>
+                  <li>
+                    <a href="#6d2f957a69" class="toc-h2 toc-link" data-title="Поиск плательщика">Поиск плательщика</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ae73060f94" class="toc-h1 toc-link" data-title="Контракты">Контракты</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#7d074bea7a" class="toc-h2 toc-link" data-title="Создать контракт">Создать контракт</a>
+                  </li>
+                  <li>
+                    <a href="#388dd42d90" class="toc-h2 toc-link" data-title="Получить контракт по номеру">Получить контракт по номеру</a>
+                  </li>
+                  <li>
+                    <a href="#id" class="toc-h2 toc-link" data-title="Получить контракт по ID">Получить контракт по ID</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#a23b3610d1" class="toc-h1 toc-link" data-title="Справочники">Справочники</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#banks" class="toc-h2 toc-link" data-title="Banks">Banks</a>
+                  </li>
+                  <li>
+                    <a href="#categories" class="toc-h2 toc-link" data-title="Categories">Categories</a>
+                  </li>
+                  <li>
+                    <a href="#currency" class="toc-h2 toc-link" data-title="Currency">Currency</a>
+                  </li>
+                  <li>
+                    <a href="#departments" class="toc-h2 toc-link" data-title="Departments">Departments</a>
+                  </li>
+                  <li>
+                    <a href="#department-group" class="toc-h2 toc-link" data-title="Department Group">Department Group</a>
+                  </li>
+                  <li>
+                    <a href="#payer-type" class="toc-h2 toc-link" data-title="Payer type">Payer type</a>
+                  </li>
+                  <li>
+                    <a href="#regions" class="toc-h2 toc-link" data-title="Regions">Regions</a>
+                  </li>
+                  <li>
+                    <a href="#services" class="toc-h2 toc-link" data-title="Services">Services</a>
+                  </li>
+                  <li>
+                    <a href="#units" class="toc-h2 toc-link" data-title="Units">Units</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#3e559b8cc3" class="toc-h1 toc-link" data-title="Ресурсы">Ресурсы</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#invoice" class="toc-h2 toc-link" data-title="Invoice">Invoice</a>
+                  </li>
+                  <li>
+                    <a href="#contract" class="toc-h2 toc-link" data-title="Contract">Contract</a>
+                  </li>
+                  <li>
+                    <a href="#payer" class="toc-h2 toc-link" data-title="Payer">Payer</a>
+                  </li>
+                  <li>
+                    <a href="#payee" class="toc-h2 toc-link" data-title="Payee">Payee</a>
+                  </li>
+                  <li>
+                    <a href="#department" class="toc-h2 toc-link" data-title="Department">Department</a>
+                  </li>
+                  <li>
+                    <a href="#deptgroup" class="toc-h2 toc-link" data-title="DeptGroup">DeptGroup</a>
+                  </li>
+                  <li>
+                    <a href="#discount" class="toc-h2 toc-link" data-title="Discount">Discount</a>
+                  </li>
+                  <li>
+                    <a href="#service" class="toc-h2 toc-link" data-title="Service">Service</a>
+                  </li>
+                  <li>
+                    <a href="#servicegroup" class="toc-h2 toc-link" data-title="ServiceGroup">ServiceGroup</a>
+                  </li>
+                  <li>
+                    <a href="#soato" class="toc-h2 toc-link" data-title="Soato">Soato</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#enum" class="toc-h1 toc-link" data-title="ENUM Перечисления">ENUM Перечисления</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#area" class="toc-h2 toc-link" data-title="Area">Area</a>
+                  </li>
+                  <li>
+                    <a href="#banktype" class="toc-h2 toc-link" data-title="BankType">BankType</a>
+                  </li>
+                  <li>
+                    <a href="#discounttype" class="toc-h2 toc-link" data-title="DiscountType">DiscountType</a>
+                  </li>
+                  <li>
+                    <a href="#invoicestatus" class="toc-h2 toc-link" data-title="InvoiceStatus">InvoiceStatus</a>
+                  </li>
+                  <li>
+                    <a href="#measure" class="toc-h2 toc-link" data-title="Measure">Measure</a>
+                  </li>
+                  <li>
+                    <a href="#payertype" class="toc-h2 toc-link" data-title="PayerType">PayerType</a>
+                  </li>
+                  <li>
+                    <a href="#resultcode" class="toc-h2 toc-link" data-title="ResultCode">ResultCode</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li>Copyright © SSP Maroqand</li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='3394112aa9'>Введение</h1>
+<p>Добро пожаловать в REST API <strong>Единой Биллинговой Системы (ЕБС)</strong>.</p>
+
+<p>Здесь вы найдете всю информацию, чтобы начать работу с нашим API.
+API организован по стандарту REST. Наш API имеет предсказуемые, ориентированные на ресурсы URL-адреса и использует HTTP-коды ответов для указания ошибок API.
+Мы используем встроенные функции HTTP, такие как HTTP-аутентификация и HTTP-глаголы, которые понятны для готовых HTTP-клиентов.
+JSON возвращается всеми ответами API, включая ошибки.</p>
+<h2 id='301f7fd6c0'>Среды</h2>
+<p>Этот API доступен в 2 средах:</p>
+
+<ul>
+<li><strong>Production API.</strong> URL: <code>https://bapi.birdarcha.uz</code></li>
+<li><strong>Sandbox API</strong> для тестирования. URL:  <code>http://91.212.89.229:8981</code></li>
+</ul>
+<h2 id='c0eca9e229'>Инструменты</h2>
+<p><strong>Swagger UI</strong> - позволяет визуализировать ресурсы API и взаимодействовать с ними без какой-либо логики реализации.</p>
+
+<ul>
+<li><a href=https://bapi.birdarcha.uz/swagger-ui.html target="_blank">Swagger</a> для <strong>Production</strong></li>
+<li><a href=http://91.212.89.229:8981/swagger-ui.html target="_blank">Swagger</a> для <strong>Sandbox</strong></li>
+</ul>
+<h1 id='a1ce3c1a83'>Аутентификация</h1>
+<p>В целях безопасности мы требуем, чтобы приложения запрашивали и получали разрешение на доступ к любой конкретной учетной записи (даже если она ваша).
+Это делается с использованием стандартного протокола <a href='https://habr.com/company/mailru/blog/115163/' target="_blank">OAuth 2.0</a>.</p>
+
+<p>OAuth 2.0 основан на использовании базовых веб-технологий: HTTP-запросах, редиректах и т. п. Поэтому использование OAuth возможно на любой платформе с доступом к интернету и браузеру: на сайтах, в мобильных и desktop-приложениях, плагинах для браузеров…</p>
+
+<p>Общая схема работы приложения, использующего OAuth, такова:</p>
+
+<ul>
+<li>получение авторизации</li>
+<li>обращение к защищенным ресурсам</li>
+</ul>
+
+<p>Результатом авторизации является <code>access token</code> — некий ключ (обычно просто набор символов), предъявление которого является пропуском к защищенным ресурсам.
+Обращение к ним в самом простом случае происходит по HTTPS с указанием в заголовках или в качестве одного из параметров полученного <code>access token</code>.</p>
+<h2 id='ce0c72a11a'>Регистрация в ЕБС</h2>
+<p>Для получения токена доступа вам понадобится <code>login</code> и <code>password</code> также <code>client_id</code> и <code>client_secret</code>.</p>
+
+<p>Обратите к системному интегратору ЕБС о предоставлении им доступа. Системный интегратор в свою очередь добавляет ваша приложения в биллинговой системе.
+После регистрации приложения, OAuth-сервер ЕБС сгенерирует <code>login</code> и <code>password</code> также <code>client_id</code> и <code>client_secret</code> параметры, которые нужно будет указать при получени токена.</p>
+<h2 id='cdb759bb11'>Получение токена</h2>
+<p>Получив <code>login</code> и <code>password</code> также <code>client_id</code> и <code>client_secret</code>, вы можете обменять их на токен доступа.</p>
+
+<blockquote>
+<p>Пример запроса получение токена:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/oauth/token?grant_type<span class="o">=</span>password&amp;username<span class="o">=</span><span class="nb">test</span>&amp;password<span class="o">=</span>123
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Basic &lt;base64-encoded-string&gt;'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/oauth/token?grant_type<span class="o">=</span>password&amp;username<span class="o">=</span><span class="nb">test</span>&amp;password<span class="o">=</span>123
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Basic &lt;base64-encoded-string&gt;'</span>
+</code></pre>
+<p><strong>Параметры заголовки</strong></p>
+
+<table><thead>
+<tr>
+<th>Обозначение</th>
+<th>Наименование</th>
+<th>Примечание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td></td>
+<td><code>base64(&lt;client_id&gt;:&lt;client_secret&gt;)</code>, закодированная методом <code>base64</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Параметры запроса</strong></p>
+
+<table><thead>
+<tr>
+<th>Обозначение</th>
+<th>Наименование</th>
+<th>Примечание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>grant_type</code></td>
+<td>тип ответа</td>
+<td>Обязательный параметр, параметру <code>grant_type</code> всегда присваивается значение <code>login</code> и <code>password</code></td>
+</tr>
+<tr>
+<td><code>username</code></td>
+<td>логин пользователя</td>
+<td>Обязательный параметр</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>пароль пользователя</td>
+<td>Обязательный параметр</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Пример ответа в случае успеха:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="s2">"13e32e6a-f54d-4962-98d6-dd219c73b0a7"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"token_type"</span><span class="p">:</span><span class="s2">"bearer"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"refresh_token"</span><span class="p">:</span><span class="s2">"b6a2a361-4e9c-4d27-b3e4-a42e982417fa"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expires_in"</span><span class="p">:</span><span class="mi">1199</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"scope"</span><span class="p">:</span><span class="s2">"read write"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"ok"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Параметры ответа:</strong></p>
+
+<table><thead>
+<tr>
+<th>Обозначение</th>
+<th>Наименование</th>
+<th>Примечание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>access_token</code></td>
+<td>токен</td>
+<td>токен, с которым приложение может работать от имени пользователя.</td>
+</tr>
+<tr>
+<td><code>token_type</code></td>
+<td>тип ключа</td>
+<td>определяющий как его надо использовать</td>
+</tr>
+<tr>
+<td><code>refresh_token</code></td>
+<td>токен для обновление</td>
+<td></td>
+</tr>
+<tr>
+<td><code>expires_in</code></td>
+<td>время жизни токена доступа</td>
+<td>Значение указывается в секундах.</td>
+</tr>
+<tr>
+<td><code>scope</code></td>
+<td>областью видимости</td>
+<td>Доступ приложения к пользовательскому аккаунту ограничен &quot;областью видимости&quot; (scope) предоставленных прав авторизации (например, доступ на чтение или запись)</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>статус ответа</td>
+<td><code>ok</code> если успешно</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Пример ответа в случае ошибки:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="s2">"invalid_request"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>HTTP-код ответа может быть 400, 401. В теле ответа помимо error могут быть дополнительные параметры, например:</p>
+
+<ul>
+<li><code>invalid_request</code> - неверный формат запроса</li>
+<li><code>invalid_grant</code> - неверный или просроченный код подтверждения</li>
+<li><code>unsupported_grant_type</code> - неверное значение параметра grant_type --&gt;</li>
+</ul>
+
+<aside class="notice">
+Все запросы к методам API должны содержать в заголовках `Authorization Bearer <token>`
+</aside>
+<h2 id='19fbeae485'>Восстановление авторизации</h2>
+<p>Обычно, <code>access token</code> имеет ограниченный срок годности. Чтобы не заставлять пользователя проходить авторизацию после истечения срока действия <code>access token</code>,
+во всех перечисленных выше вариантах, в дополнение к <code>access token</code> может возвращаться еще <code>refresh token</code>. По нему можно получить <code>access token</code> с помощью HTTP-запроса,
+аналогично авторизации по логину и паролю.</p>
+
+<blockquote>
+<p>Пример обновление токена:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/oauth/token?grant_type<span class="o">=</span>refresh_token&amp;refresh_token<span class="o">=</span>b6a2a361-4e9c-4d27-b3e4-a42e982417fa
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Basic &lt;base64-encoded-string&gt;'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/oauth/token?grant_type<span class="o">=</span>refresh_token&amp;refresh_token<span class="o">=</span>b6a2a361-4e9c-4d27-b3e4-a42e982417fa
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Basic &lt;base64-encoded-string&gt;'</span>
+</code></pre>
+<table><thead>
+<tr>
+<th>Обозначение</th>
+<th>Наименование</th>
+<th>Примечание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>Authorization</code></td>
+<td></td>
+<td><code>base64(&lt;client_id&gt;:&lt;client_secret&gt;)</code>, закодированная методом <code>base64</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Параметры запроса</strong></p>
+
+<table><thead>
+<tr>
+<th>Обозначение</th>
+<th>Наименование</th>
+<th>Примечание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>grant_type</code></td>
+<td>тип ответа</td>
+<td>Обязательный параметр. Параметр <code>grant_type=refresh_token</code>, а параметр <code>refresh_token</code> должен содержать значение токена перевыпуска</td>
+</tr>
+<tr>
+<td><code>refresh_token</code></td>
+<td>токен для обновления токена доступа</td>
+<td>Обязательный параметр.</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Формат ответа в случае успеха:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="s2">"13e32e6a-f54d-4962-98d6-dd219c73b0a7"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"token_type"</span><span class="p">:</span><span class="s2">"bearer"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"refresh_token"</span><span class="p">:</span><span class="s2">"b6a2a361-4e9c-4d27-b3e4-a42e982417fa"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expires_in"</span><span class="p">:</span><span class="mi">1199</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"ok"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<aside class="notice">
+Все запросы к методам API должны содержать в заголовках `Authorization Bearer <token>`
+</aside>
+<h1 id='9eacb1a1bd'>Инвойсы</h1><h2 id='2aab3971be'>Создания инвойса</h2>
+<blockquote>
+<p>Пример запроса формирования инвойса:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X POST http://91.212.89.229:8981/api/invoice?requestId<span class="o">=</span>request-111&amp;serviceId<span class="o">=</span>101&amp;departmentId<span class="o">=</span>1&amp;payerId<span class="o">=</span>100 <span class="se">\</span>
+-H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+-d <span class="s1">'["NUKUS_ZONE"]'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X POST https://bapi.birdarcha.uz/api/invoice?requestId<span class="o">=</span>request-111&amp;serviceId<span class="o">=</span>101&amp;departmentId<span class="o">=</span>1&amp;payerId<span class="o">=</span>100 <span class="se">\</span>
+-H <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+-d <span class="s1">'["NUKUS_ZONE"]'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>POST https://bapi.birdarcha.uz/api/invoice</code></p>
+
+<blockquote>
+<p>Пример ответа в случае успеха:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"bankAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"23402000300100001010"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"budgetAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"401410860032027950100009001"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPEN"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"discounts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NUKUS_ZONE"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">74887.5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"measure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UZS"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Через сеть интернет. Скидка 50%."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"payee"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"soato"</span><span class="p">:</span><span class="w"> </span><span class="mi">1703202</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"contact"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"payer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BABAKULOV ANVAR MADUMAROVICH"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"474525855"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"908067778"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"purpose"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация субъекта предпринимательства"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0 MRZP"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"expires"</span><span class="p">:</span><span class="w"> </span><span class="mi">1503416355689</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"updated"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issued"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495640355689</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51003</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"requestId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"serial"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21698505176693"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"fee"</span><span class="p">:</span><span class="w"> </span><span class="mi">7489</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация ООО Узбекинвест"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p><strong>REQUEST URL PARAMETERS</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>requestId</code></td>
+<td>string</td>
+<td><code>Обязательный</code></td>
+<td>Уникальный номер заявки.</td>
+</tr>
+<tr>
+<td><code>serviceId</code></td>
+<td>integer</td>
+<td><code>Обязательный</code></td>
+<td>ID услуги в биллинговой системе</td>
+</tr>
+<tr>
+<td><code>departmentId</code></td>
+<td>integer</td>
+<td><code>Обязательный</code></td>
+<td>ID ведомства в биллинговой системе</td>
+</tr>
+<tr>
+<td><code>payerId</code></td>
+<td>long</td>
+<td><code>Обязательный</code></td>
+<td>ID плательщика в биллинговой системе</td>
+</tr>
+<tr>
+<td><code>note</code></td>
+<td>string</td>
+<td><code>Необязательный</code></td>
+<td>Краткое описание инвойса</td>
+</tr>
+<tr>
+<td><code>contractId</code></td>
+<td>long</td>
+<td><code>Необязательный</code></td>
+<td>ID контракта. <br> <code>Используется в случае если у услуги нет фиксированной цены</code>.</td>
+</tr>
+</tbody></table>
+
+<p><strong>REQUEST BODY Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td><code>Array[String]</code></td>
+<td>Обязательно</td>
+<td>Список наименований <code>скидок (Discount)</code>. <br> Пример: <code>[&quot;NUKUS_ZONE&quot;, &quot;DISABILITIES&quot;]</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Response</strong></p>
+
+<p><a href="#invoice">Invoice</a> объект</p>
+<h2 id='a3577b59c9'>Отмены инвойса</h2>
+<aside class="notice">
+  Ранее созданный инвойс можно отменить, если он еще не был оплачен. Для этого в методе `DELETE /api/invoice` нужно указать параметр id из ранее сформированного инвойса.
+</aside>
+
+<blockquote>
+<p>Пример отмены инвойса:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/invoice?id<span class="o">=</span>1841974 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/invoice?id<span class="o">=</span>1841974 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+</code></pre>
+<p><strong>Request</strong></p>
+
+<p><code>DELETE https://bapi.birdarcha.uz/api/invoice?id=</code></p>
+
+<p>В случае успеха будет возвращен <code>true</code>.</p>
+<h2 id='de128c3897'>Получить инвойс</h2>
+<p>Ранее созданный инвойс можно получить по его серийному номеру (<code>serial</code>).</p>
+
+<blockquote>
+<p>Пример запрос получить инвойса:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/invoice/<span class="o">{</span>serial<span class="o">}</span> <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/invoice/<span class="o">{</span>serial<span class="o">}</span> <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+</code></pre>
+<p><strong>Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/invoice/{serial}</code></p>
+
+<p><strong>Response</strong></p>
+
+<p><a href="#invoice">Invoice</a> объект</p>
+<h1 id='ffcdb7836e'>Плательщики</h1><h2 id='af8e77b30e'>Создать плательщика</h2>
+<blockquote>
+<p>Пример запроса формирования инвойса:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X POST http://91.212.89.229:8981/api/invoice?name<span class="o">=</span>SarvarNishonboyev&amp;type<span class="o">=</span>1&amp;taxId<span class="o">=</span>1234567 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+-d <span class="s1">'["NUKUS_ZONE"]'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X POST https://bapi.birdarcha.uz/api/invoice?name<span class="o">=</span>SarvarNishonboyev&amp;type<span class="o">=</span>1&amp;taxId<span class="o">=</span>1234567 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+-d <span class="s1">'["NUKUS_ZONE"]'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>POST https://bapi.birdarcha.uz/api/payer</code></p>
+
+<p><strong>REQUEST PARAMETERS</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Обязательный параметр. Наименование плательщика.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>integer</td>
+<td>Обязательный параметр. Тип плательщика (0-юридическое, 1 -физическое лицо, 2-иностранный гражданин). См. п. 90</td>
+</tr>
+<tr>
+<td>phoneNum</td>
+<td>integer</td>
+<td>Обязательный параметр. Номер телефона плательщика</td>
+</tr>
+<tr>
+<td>taxid</td>
+<td>string</td>
+<td>ИНН плательщика (Обязательный в случае если не указан passId)</td>
+</tr>
+<tr>
+<td>passId</td>
+<td>string</td>
+<td>Серия и номер паспорта плетельщика (Обязательный в случае если не указан taxId)</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>Email плательщика. Необязательный параметр</td>
+</tr>
+<tr>
+<td>bankAccount</td>
+<td>string</td>
+<td>Расчетный счет плательщика. Необязательный параметр</td>
+</tr>
+<tr>
+<td>mfo</td>
+<td>string</td>
+<td>МФО банка в котором открыт счет bankAccount (Необязательный параметр)</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sarvar.nishonboyev@gmail.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7491472660"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"passport"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sarvar Nishonboyev"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">856408</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Физическое лицо"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Response</strong></p>
+
+<p>Объект <a href="#payer">Payer</a></p>
+<h2 id='6d2f957a69'>Поиск плательщика</h2>
+<p>Можно найти <code>плательщик</code> по <code>ИНН</code> или по <code>серии и номеру паспорта</code>.</p>
+
+<blockquote>
+<p>Пример запроса поиск плательщика:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/payer?taxId<span class="o">=</span>1234567 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+-d <span class="s1">'["NUKUS_ZONE"]'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/invoice?taxId<span class="o">=</span>1234567 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+-d <span class="s1">'["NUKUS_ZONE"]'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/payer</code></p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sarvar.nishonboyev@gmail.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7491472660"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"passport"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sarvar Nishonboyev"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">856408</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Физическое лицо"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>REQUEST PARAMETERS</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>taxid</td>
+<td>string</td>
+<td>ИНН плательщика (Обязательный в случае если не указан)</td>
+</tr>
+<tr>
+<td>passId</td>
+<td>string</td>
+<td>Серия и номер паспорта плетельщика (Обязательный в случае если не указан taxId)</td>
+</tr>
+</tbody></table>
+<h1 id='ae73060f94'>Контракты</h1><h2 id='7d074bea7a'>Создать контракт</h2>
+<p>Для формирования нового контракта значение параметра <code>departmentId</code> берется из заранее предоставленных справочников <a href="#departments">Departments</a>.</p>
+
+<blockquote>
+<p>Пример запрос создать контракт:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X POST http://91.212.89.229:8981/api/contract?number<span class="o">=</span>c-123123&amp;payerId<span class="o">=</span>100&amp;departmentId<span class="o">=</span>1&amp;issueDate<span class="o">=</span>2019-01-20&amp;amount<span class="o">=</span>1000&amp;note<span class="o">=</span>kontrakt <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X POST https://bapi.birdarcha.uz/api/invoice?number<span class="o">=</span>c-123123&amp;payerId<span class="o">=</span>100&amp;departmentId<span class="o">=</span>1&amp;issueDate<span class="o">=</span>2019-01-20&amp;amount<span class="o">=</span>1000&amp;note<span class="o">=</span>kontrakt <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>POST https://bapi.birdarcha.uz/api/contract/</code></p>
+
+<p><strong>REQUEST PARAMETERS</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>number</td>
+<td>string</td>
+<td>Обязательный параметр. Номер контракта.</td>
+</tr>
+<tr>
+<td>payerId</td>
+<td>long</td>
+<td>Обязательный параметр. ID плательщика в биллинговой системе. <a href="#ffcdb7836e">Как создать плательщик?</a></td>
+</tr>
+<tr>
+<td>departmentId</td>
+<td>integer</td>
+<td>Обязательный параметр. ID ведомства в биллинговой системе</td>
+</tr>
+<tr>
+<td>issueDate</td>
+<td>string</td>
+<td>Обязательный параметр. Дата составления контракта. Строка в формате <code>yyyy-MM-dd</code></td>
+</tr>
+<tr>
+<td>exipreDate</td>
+<td>string</td>
+<td>Обязательный параметр. Дата истечения срока контракта. Строка в формате <code>yyyy-MM-dd</code></td>
+</tr>
+<tr>
+<td>amount</td>
+<td>double</td>
+<td>Обязательный параметр. Сумма контракта в UZS. Будет округляться до сотой доли (тийин). Пример <code>144200.12</code></td>
+</tr>
+<tr>
+<td>note</td>
+<td>string</td>
+<td>Обязательный параметр. Примечание к контракту</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"payer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BABAKULOV ANVAR MADUMAROVICH"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kontrakt za usluga reg.biz."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contractor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expires"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issued"</span><span class="p">:</span><span class="w"> </span><span class="mi">1547924400000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1494647</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c-123123"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Response</strong></p>
+
+<p><a href="#contract">Contract</a> объект</p>
+<h2 id='388dd42d90'>Получить контракт по номеру</h2>
+<blockquote>
+<p>Пример запрос Получить контракт:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X POST http://91.212.89.229:8981/api/contract?number<span class="o">=</span>c-123123&amp;issueDate<span class="o">=</span>2019-01-20 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X POST https://bapi.birdarcha.uz/api/invoice?number<span class="o">=</span>c-123123&amp;issueDate<span class="o">=</span>2019-01-20 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/contract/</code></p>
+
+<p><strong>REQUEST PARAMETERS</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>number</td>
+<td>string</td>
+<td>Обязательный параметр. Номер контракта.</td>
+</tr>
+<tr>
+<td>issueDate</td>
+<td>string</td>
+<td>Обязательный параметр. Дата составления контракта. Строка в формате <code>yyyy-MM-dd</code></td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"payer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BABAKULOV ANVAR MADUMAROVICH"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kontrakt za usluga reg.biz."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contractor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expires"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issued"</span><span class="p">:</span><span class="w"> </span><span class="mi">1547924400000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1494647</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c-123123"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Response</strong></p>
+
+<p><a href="#contract">Contract</a> объект</p>
+<h2 id='id'>Получить контракт по ID</h2>
+<blockquote>
+<p>Пример запрос Получить контракт:</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X POST http://91.212.89.229:8981/api/contract?id<span class="o">=</span>1494647 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X POST https://bapi.birdarcha.uz/api/invoice?id<span class="o">=</span>1494647 <span class="se">\</span>
+-H <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+-H <span class="s1">'Authorization: Bearer 44e07a7d-3950-4e06-b6cf-2eee951b8a8d'</span> <span class="se">\</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/contract/</code></p>
+
+<p><strong>REQUEST PARAMETERS</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Обязательный параметр. ID контракта.</td>
+</tr>
+</tbody></table>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"payer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BABAKULOV ANVAR MADUMAROVICH"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kontrakt za usluga reg.biz."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contractor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expires"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issued"</span><span class="p">:</span><span class="w"> </span><span class="mi">1547924400000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1494647</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c-123123"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Response</strong></p>
+
+<p><a href="#contract">Contract</a> объект</p>
+<h1 id='a23b3610d1'>Справочники</h1><h2 id='banks'>Banks</h2>
+<p>Получить список банков</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/banks
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/banks
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/banks</code></p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Подразделение Центрального банка"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p><strong>Response</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>number</td>
+<td>ID банка</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>string</td>
+<td>Адрес банка</td>
+</tr>
+<tr>
+<td><code>branch</code></td>
+<td>string</td>
+<td>Наименование банка, который принадлежит</td>
+</tr>
+<tr>
+<td><code>inn</code></td>
+<td>string</td>
+<td>ИНН номер банка</td>
+</tr>
+<tr>
+<td><code>mfo</code></td>
+<td>string</td>
+<td>Код банка</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>Название банка</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td>Тип банка. See: <a href="#banktype">BankType</a></td>
+</tr>
+</tbody></table>
+<h2 id='categories'>Categories</h2>
+<p>Получить группа услуг</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/category?id<span class="o">=</span>123
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/category?id<span class="o">=</span>123
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p>Получить группа услуг: <code>GET https://bapi.birdarcha.uz/api/ref/category?id=</code></p>
+
+<p>Получить список группы услуг: <code>GET https://bapi.birdarcha.uz/api/ref/categories</code></p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"children"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p><strong>Response</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID группа услуг</td>
+</tr>
+<tr>
+<td>en</td>
+<td>string</td>
+<td>Название группа услуг на английском</td>
+</tr>
+<tr>
+<td>ru</td>
+<td>string</td>
+<td>Название группа услуг на русском</td>
+</tr>
+<tr>
+<td>uz</td>
+<td>string</td>
+<td>Название группа услуг на узбекском</td>
+</tr>
+<tr>
+<td>children</td>
+<td>JSON Array</td>
+<td>Массив детей группы</td>
+</tr>
+</tbody></table>
+<h2 id='currency'>Currency</h2>
+<p>Справочник единиц оплаты</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/currency
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/currency
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/currency</code></p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">106</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tsFrom"</span><span class="p">:</span><span class="w"> </span><span class="mi">1541012400000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"basis"</span><span class="p">:</span><span class="w"> </span><span class="mi">202730</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"measure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MRZP"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tsFrom"</span><span class="p">:</span><span class="w"> </span><span class="mi">1475262000000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"basis"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"measure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UZS"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p><strong>Response</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID единицу</td>
+</tr>
+<tr>
+<td><code>tsFrom</code></td>
+<td>timestamp</td>
+<td>Создано время</td>
+</tr>
+<tr>
+<td><code>basis</code></td>
+<td>number</td>
+<td>Значение</td>
+</tr>
+<tr>
+<td><code>measure</code></td>
+<td>string</td>
+<td>Тип измерения: <a href="#measure">Measure</a></td>
+</tr>
+</tbody></table>
+<h2 id='departments'>Departments</h2>
+<p>Получить подразделения получатели платежей по ID</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/department?id<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/department?id<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/department?id=1</code></p>
+
+<p><strong>Request parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID department</td>
+</tr>
+</tbody></table>
+
+<p><strong>Получить подразделения получатели платежей (всё, по региону, по группе)</strong></p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/departments?soatoId<span class="o">=</span>1735&amp;groupId<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/departments?soatoId<span class="o">=</span>1735&amp;groupId<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/departments?soatoId=1735&amp;groupId=1</code></p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"soato"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1703202</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Алтынкульский район"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Oltinko`l tumani"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"full_en"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"full_ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Андижанская область, Алтынкульский район(1703202)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"full_uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Andijon viloyati, Oltinko`l tumani(1703202)"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"deptGroup"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Бир Дарча Маркази"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uniform Interface Center"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Бир Дарча Маркази - Oltinko`l tumani"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200254553"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contactPersonName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Худойназарова А "</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+ 998 97 998 78 69"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Request parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Requeired</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>soatoId</td>
+<td>number</td>
+<td>Не обязательно</td>
+<td>ID административно-территориального объекта (региона)</td>
+</tr>
+<tr>
+<td>groupId</td>
+<td>number</td>
+<td>Не обязательно</td>
+<td>ID группу отделов</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>number</td>
+<td>ID department</td>
+</tr>
+<tr>
+<td><code>en</code></td>
+<td>string</td>
+<td>Название отделы на английском</td>
+</tr>
+<tr>
+<td><code>ru</code></td>
+<td>string</td>
+<td>Название отделы на русском</td>
+</tr>
+<tr>
+<td><code>uz</code></td>
+<td>string</td>
+<td>Название отделы на узбекском</td>
+</tr>
+<tr>
+<td><code>taxId</code></td>
+<td>string</td>
+<td>ИНН номер</td>
+</tr>
+<tr>
+<td><code>contactPersonName</code></td>
+<td>string</td>
+<td>Имя контактного лица</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td>Номер телефона</td>
+</tr>
+<tr>
+<td><code>enabled</code></td>
+<td>boolean</td>
+<td>Активно</td>
+</tr>
+<tr>
+<td><code>soato</code></td>
+<td>Soato object</td>
+<td>Код региона <a href="#soato">soato</a></td>
+</tr>
+<tr>
+<td><code>deptGroup</code></td>
+<td>DeptGroup object</td>
+<td>Группа подразделении <a href="#deptgroup">DeptGroup</a></td>
+</tr>
+</tbody></table>
+<h2 id='department-group'>Department Group</h2>
+<p>Получить группу отдел по ID</p>
+
+<blockquote>
+<p>Пример запроса Получить группу отдел по ID</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/deptGroup?id<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/deptGroup?id<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/deptGroup?id=1</code></p>
+
+<p><strong>Request parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID группу отдел</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="s2">"deptGroup"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Бир Дарча Маркази"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uniform Interface Center"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Response parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>ID региону</td>
+</tr>
+<tr>
+<td><code>en</code></td>
+<td>string</td>
+<td>Название группа региона на английском</td>
+</tr>
+<tr>
+<td><code>ru</code></td>
+<td>string</td>
+<td>Название группа региона на русском</td>
+</tr>
+<tr>
+<td><code>uz</code></td>
+<td>string</td>
+<td>Название группа региона на узбекском</td>
+</tr>
+</tbody></table>
+
+<p><strong>Получить все группу отделы</strong></p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/deptGroups
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/deptGroups
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/deptGroups</code></p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="s2">"deptGroup"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Бир Дарча Маркази"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uniform Interface Center"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre><h2 id='payer-type'>Payer type</h2>
+<p>Справочник типов плательщика</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/payertypes
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/payertypes
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/payertypes</code></p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"0"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Юридическое лицо"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Физическое лицо"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Иностранный гражданин"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h2 id='regions'>Regions</h2>
+<p>Получить перечень регионов по Soato ID</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/regions
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/regions?soatoId<span class="o">=</span>1735
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/regions?soatoId=</code></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>soatoId</td>
+<td>number</td>
+<td>Soato ID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1735204</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Амударьинский район"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Amudaryo tumani"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"full_en"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"full_ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Республика Каракалпакстан, Амударьинский район(1735204)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"full_uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Qoraqalpog`iston Respublikasi, Amudaryo tumani(1735204)"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p><strong>Response parameters</strong></p>
+
+<p>Массив объекта <a href="#soato">Soato</a></p>
+<h2 id='services'>Services</h2>
+<p>Получить услугу по ID</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/service?id<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/service?id<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация Общество с ограниченной ответственностью (в явочном порядке)"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация Общество с ограниченной ответственностью (в явочном порядке)"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация Общество с ограниченной ответственностью (в явочном порядке)"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"deptGroup"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Бир Дарча Маркази"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uniform Interface Center"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"serviceGroup"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация субъекта предпринимательства"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация субъекта предпринимательства"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация субъекта предпринимательства"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"parent"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"en"</span><span class="p">:</span><span class="w"> </span><span class="s2">"РЕГИСТРАЦИЯ БИЗНЕСА"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ru"</span><span class="p">:</span><span class="w"> </span><span class="s2">"РЕГИСТРАЦИЯ БИЗНЕСА"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"uz"</span><span class="p">:</span><span class="w"> </span><span class="s2">"РЕГИСТРАЦИЯ БИЗНЕСА"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"expireLimit"</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"minPaymentAmount"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация Общество с ограниченной ответственностью (в явочном порядке)"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"partialPaymentsAllowed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/service?id=1</code></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID услуга</td>
+</tr>
+</tbody></table>
+
+<p><strong>Получить список услуг по группа услуг и группа подразделении</strong></p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code>GET https://bapi.birdarcha.uz/api/ref/services?serviceGroupId=2&amp;deptGroupId=1</code></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>serviceGroupId</td>
+<td>number</td>
+<td>ID группа услуг</td>
+</tr>
+<tr>
+<td>deptGroupId</td>
+<td>number</td>
+<td>ID группа подразделении</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response parameters</strong></p>
+
+<p>Response type <a href="#service"><strong>Service</strong></a></p>
+<h2 id='units'>Units</h2>
+<p>Получить единиц по услуг</p>
+
+<blockquote>
+<p>Пример запроса</p>
+</blockquote>
+<pre class="highlight shell tab-shell--sandbox"><code>curl -X GET http://91.212.89.229:8981/api/ref/unit?serviceId<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre><pre class="highlight shell tab-shell--production"><code>curl -X GET https://bapi.birdarcha.uz/api/ref/unit?serviceId<span class="o">=</span>1
+-H <span class="s1">'Accept: application/json'</span>
+-H <span class="s1">'Authorization: Bearer 7312e5a2-7578-42eb-a7e1-126d7856eb12'</span>
+</code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>serviceId</td>
+<td>number</td>
+<td>ID услуга</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"tsFrom"</span><span class="p">:</span><span class="w"> </span><span class="mi">1451588400000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"tsTo"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"basis"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"measure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MRZP"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"approved"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>Response parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID unit</td>
+</tr>
+<tr>
+<td>basis</td>
+<td>number</td>
+<td>Значение</td>
+</tr>
+<tr>
+<td>measure</td>
+<td>string</td>
+<td>Название измерения</td>
+</tr>
+<tr>
+<td>tsFrom</td>
+<td>timestamp</td>
+<td></td>
+</tr>
+<tr>
+<td>tsTo</td>
+<td>timestamp</td>
+<td></td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>note</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>approved</td>
+<td>boolean</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='3e559b8cc3'>Ресурсы</h1>
+<p>Перечень возвращаемых объектов приведен</p>
+<h2 id='invoice'>Invoice</h2>
+<p>Представляет информацию о инвойса</p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"bankAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"23402000300100001010"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"budgetAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"401410860032027950100009001"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPEN"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"discounts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NUKUS_ZONE"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">74887.5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"measure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UZS"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Через сеть интернет. Скидка 50%."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"payee"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"soato"</span><span class="p">:</span><span class="w"> </span><span class="mi">1703202</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"contact"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"payer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BABAKULOV ANVAR MADUMAROVICH"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"474525855"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"908067778"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"purpose"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация субъекта предпринимательства"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0 MRZP"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"expires"</span><span class="p">:</span><span class="w"> </span><span class="mi">1503416355689</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"updated"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issued"</span><span class="p">:</span><span class="w"> </span><span class="mi">1495640355689</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51003</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"requestId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"serial"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21698505176693"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"fee"</span><span class="p">:</span><span class="w"> </span><span class="mi">7489</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация ООО Узбекинвест"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>long</td>
+<td>Invoice ID</td>
+</tr>
+<tr>
+<td>requestId</td>
+<td>string</td>
+<td>Уникальный номер заявки</td>
+</tr>
+<tr>
+<td>fee</td>
+<td>double</td>
+<td>Сумма инвойса</td>
+</tr>
+<tr>
+<td>bankAccount</td>
+<td>string</td>
+<td>Расчетный счет в банке</td>
+</tr>
+<tr>
+<td>budgetAccount</td>
+<td>string</td>
+<td>Лицевой счет</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>Статус инвойса <a href="#invoicestatus">Invoice Status</a></td>
+</tr>
+<tr>
+<td>issued</td>
+<td>timestamp</td>
+<td>Дата выпуска</td>
+</tr>
+<tr>
+<td>expires</td>
+<td>timestamp</td>
+<td>Срок действия</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>timestamp</td>
+<td>обновленное время</td>
+</tr>
+<tr>
+<td>note</td>
+<td>string</td>
+<td>Детали инвойса</td>
+</tr>
+<tr>
+<td>discounts</td>
+<td>JSON array</td>
+<td>Применимые скидки: <a href="#discount">Discount</a></td>
+</tr>
+<tr>
+<td>payer</td>
+<td>Payer</td>
+<td>Данные плательщика: <a href="#payer">Payer</a></td>
+</tr>
+<tr>
+<td>payee</td>
+<td>Payee object</td>
+<td>Получатель платежа: <a href="#payee">Payee</a></td>
+</tr>
+<tr>
+<td>purpose</td>
+<td>Service object</td>
+<td>Назначение платежа: <a href="#service">Service</a></td>
+</tr>
+<tr>
+<td>contract</td>
+<td>Contract object</td>
+<td>Контракт: <a href="#contract">Contract</a></td>
+</tr>
+</tbody></table>
+<h2 id='contract'>Contract</h2>
+<p>Представляет информацию о контракта</p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"payer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BABAKULOV ANVAR MADUMAROVICH"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"note"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kontrakt za usluga reg.biz."</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contractor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expires"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issued"</span><span class="p">:</span><span class="w"> </span><span class="mi">1547924400000</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1494647</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c-123123"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID контракт</td>
+</tr>
+<tr>
+<td>number</td>
+<td>string</td>
+<td>Номер контракта</td>
+</tr>
+<tr>
+<td>payer</td>
+<td>string</td>
+<td>Имя плательщика в биллинговой системе</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>number</td>
+<td>Сумма контракта в UZS. Будет округляться до сотой доли (тийин). Пример 144200.12</td>
+</tr>
+<tr>
+<td>note</td>
+<td>string</td>
+<td>Примечание к контракту</td>
+</tr>
+<tr>
+<td>contractor</td>
+<td>string</td>
+<td>Отделения составления контракта</td>
+</tr>
+<tr>
+<td>issued</td>
+<td>string</td>
+<td>Дата составления контракта</td>
+</tr>
+<tr>
+<td>expires</td>
+<td>string</td>
+<td>Дата истечения срока контракта</td>
+</tr>
+</tbody></table>
+<h2 id='payer'>Payer</h2>
+<p>Плетельщик требуется для правильного взаимодействия системы с банками, т.к. чтобы провести платеж нужно обязательно указать кто платит. Ниже приведена таблица с подробным описанием полей объекта PayerDTO</p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sarvar.nishonboyev@gmail.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7491472660"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"passport"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sarvar Nishonboyev"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">856408</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Физическое лицо"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Формат</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>integer</td>
+<td></td>
+<td>id плательщика</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td></td>
+<td>ФИО (Наименование в случае юр.лица) плательщика</td>
+</tr>
+<tr>
+<td>taxid</td>
+<td>number</td>
+<td>только цифры от 0 до 9. длина 9 симв</td>
+<td>ИНН плательщика. Может быть пустым если указан  <code>passport</code></td>
+</tr>
+<tr>
+<td>passport</td>
+<td>string</td>
+<td>латинские буквы и цифры от 0 до 9</td>
+<td>Серия номер паспорта плательщика. Может быть пустым если указан <code>taxid</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>email@example.com</td>
+<td></td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>цифры от 0 до 9</td>
+<td>Контактный телефон.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>integer</td>
+<td>0,1,2</td>
+<td>Тип плательщика <a href="#payertype">Payer Type</a></td>
+</tr>
+</tbody></table>
+<h2 id='payee'>Payee</h2>
+<p>Получатель платежа</p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Центр Единого Окна - Алтынкульский район"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"soato"</span><span class="p">:</span><span class="w"> </span><span class="mi">1703202</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"contact"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"taxid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>number</td>
+<td>ID получателя</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Имя получателя</td>
+</tr>
+<tr>
+<td>soato</td>
+<td>number</td>
+<td>Код региона</td>
+</tr>
+<tr>
+<td>contact</td>
+<td>string</td>
+<td>Контактный номер</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>string</td>
+<td>телефон номер</td>
+</tr>
+<tr>
+<td>taxid</td>
+<td>number</td>
+<td>ИНН номер</td>
+</tr>
+</tbody></table>
+<h2 id='department'>Department</h2>
+<p>Подразделения - получатели платежей</p>
+
+<p><strong>Response</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>number</td>
+<td>ID department</td>
+</tr>
+<tr>
+<td><code>en</code></td>
+<td>string</td>
+<td>Название отделы на английском</td>
+</tr>
+<tr>
+<td><code>ru</code></td>
+<td>string</td>
+<td>Название отделы на русском</td>
+</tr>
+<tr>
+<td><code>uz</code></td>
+<td>string</td>
+<td>Название отделы на узбекском</td>
+</tr>
+<tr>
+<td><code>taxId</code></td>
+<td>string</td>
+<td>ИНН номер</td>
+</tr>
+<tr>
+<td><code>contactPersonName</code></td>
+<td>string</td>
+<td>Имя контактного лица</td>
+</tr>
+<tr>
+<td><code>phoneNumber</code></td>
+<td>string</td>
+<td>Номер телефона</td>
+</tr>
+<tr>
+<td><code>enabled</code></td>
+<td>boolean</td>
+<td>Активно</td>
+</tr>
+<tr>
+<td><code>soato</code></td>
+<td>Soato object</td>
+<td>Код списки административно-территориального объекта (Регионы) <a href="#soato">soato</a></td>
+</tr>
+</tbody></table>
+<h2 id='deptgroup'>DeptGroup</h2>
+<p>Группу подразделения - получатели платежей</p>
+
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>ID региону</td>
+</tr>
+<tr>
+<td><code>en</code></td>
+<td>string</td>
+<td>Название группа региона на английском</td>
+</tr>
+<tr>
+<td><code>ru</code></td>
+<td>string</td>
+<td>Название группа региона на русском</td>
+</tr>
+<tr>
+<td><code>uz</code></td>
+<td>string</td>
+<td>Название группа региона на узбекском</td>
+</tr>
+</tbody></table>
+<h2 id='discount'>Discount</h2>
+<p>Скидки</p>
+
+<blockquote>
+<p>Пример ответа</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NUKUS_ZONE"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">74887.5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"measure"</span><span class="p">:</span><span class="w"> </span><span class="s2">"UZS"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Через сеть интернет. Скидка 50%."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Название скидки</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>number</td>
+<td>Количество скидок</td>
+</tr>
+<tr>
+<td>measure</td>
+<td>string</td>
+<td>Название измерения <a href="#measure">Measure</a></td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Описание скидки</td>
+</tr>
+</tbody></table>
+<h2 id='service'>Service</h2>
+<p>Услуги</p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Регистрация субъекта предпринимательства"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cost"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0 MRZP"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>number</td>
+<td>ID услуга</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>Наименование услуги</td>
+</tr>
+<tr>
+<td><code>cost</code></td>
+<td>string</td>
+<td>Стоимость услуги</td>
+</tr>
+</tbody></table>
+<h2 id='servicegroup'>ServiceGroup</h2>
+<p>Группа услуг</p>
+
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>ID региону</td>
+</tr>
+<tr>
+<td><code>ru</code></td>
+<td>string</td>
+<td>Название группа услуг на русском</td>
+</tr>
+<tr>
+<td><code>en</code></td>
+<td>string</td>
+<td>Название группа услуг на английском</td>
+</tr>
+<tr>
+<td><code>uz</code></td>
+<td>string</td>
+<td>Название группа услуг на узбекском</td>
+</tr>
+<tr>
+<td><code>parent</code></td>
+<td>integer</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='soato'>Soato</h2>
+<p>Код списки административно-территориального объекта (Регионы)</p>
+
+<table><thead>
+<tr>
+<th>Наименование</th>
+<th>Тип</th>
+<th>Описание</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>integer</td>
+<td>ID региону</td>
+</tr>
+<tr>
+<td><code>en</code></td>
+<td>string</td>
+<td>Название региона на английском</td>
+</tr>
+<tr>
+<td><code>ru</code></td>
+<td>string</td>
+<td>Название региона на русском</td>
+</tr>
+<tr>
+<td><code>uz</code></td>
+<td>string</td>
+<td>Название региона на узбекском</td>
+</tr>
+<tr>
+<td><code>children</code></td>
+<td>Array[Soato]</td>
+<td>Суб-регионы</td>
+</tr>
+<tr>
+<td><code>full_en</code></td>
+<td>string</td>
+<td>Полное название на английском</td>
+</tr>
+<tr>
+<td><code>full_ru</code></td>
+<td>string</td>
+<td>Полное название на русском</td>
+</tr>
+<tr>
+<td><code>full_uz</code></td>
+<td>string</td>
+<td>Полное название на узбекском</td>
+</tr>
+</tbody></table>
+<h1 id='enum'>ENUM Перечисления</h1>
+<p>A number of object fields will only accept a list of known values, as outlined in this section.</p>
+<h2 id='area'>Area</h2>
+<table><thead>
+<tr>
+<th>Area</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>COMMON</code></td>
+<td>По умолчанию</td>
+</tr>
+<tr>
+<td><code>CAPITAL</code></td>
+<td>Cтолица (г. Ташкент)</td>
+</tr>
+<tr>
+<td><code>MAIN_CITY</code></td>
+<td>Административный центр области</td>
+</tr>
+<tr>
+<td><code>CITY</code></td>
+<td>Город областного подчинения</td>
+</tr>
+<tr>
+<td><code>TOWN</code></td>
+<td>Город районного подчинения</td>
+</tr>
+</tbody></table>
+<h2 id='banktype'>BankType</h2>
+<table><thead>
+<tr>
+<th>BankType</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>CBU</code></td>
+<td>Подразделение Центрального банка</td>
+</tr>
+<tr>
+<td><code>KB_MAIN</code></td>
+<td>Головной офис КБ</td>
+</tr>
+<tr>
+<td><code>KB_PAY_CENTER</code></td>
+<td>Платежный центр КБ</td>
+</tr>
+<tr>
+<td><code>KB_BRANCH</code></td>
+<td>Филиал</td>
+</tr>
+</tbody></table>
+<h2 id='discounttype'>DiscountType</h2>
+<table><thead>
+<tr>
+<th>DiscountType</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>AMOUNT</code></td>
+<td>В единицах стоимости</td>
+</tr>
+<tr>
+<td><code>PERCENT</code></td>
+<td>В процентах</td>
+</tr>
+</tbody></table>
+<h2 id='invoicestatus'>InvoiceStatus</h2>
+<table><thead>
+<tr>
+<th>InvoiceStatus</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>OPEN</code></td>
+<td>открыто</td>
+</tr>
+<tr>
+<td><code>EXPIRED</code></td>
+<td>Истекшый</td>
+</tr>
+<tr>
+<td><code>PAID</code></td>
+<td>Оплаченный</td>
+</tr>
+<tr>
+<td><code>CANCELED</code></td>
+<td>Отмененный</td>
+</tr>
+</tbody></table>
+<h2 id='measure'>Measure</h2>
+<table><thead>
+<tr>
+<th>Measure</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>MRZP</code></td>
+<td>Минимальная зароботная плата</td>
+</tr>
+<tr>
+<td><code>UZS</code></td>
+<td>Узбекские сумы</td>
+</tr>
+<tr>
+<td><code>USD</code></td>
+<td>Доллар США</td>
+</tr>
+<tr>
+<td><code>EUR</code></td>
+<td>Евро</td>
+</tr>
+<tr>
+<td><code>RUB</code></td>
+<td>Российский рубль</td>
+</tr>
+</tbody></table>
+<h2 id='payertype'>PayerType</h2>
+<table><thead>
+<tr>
+<th>PayerType</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>LEGAL</code></td>
+<td>Юридическое лицо</td>
+</tr>
+<tr>
+<td><code>PERSON</code></td>
+<td>Физическое лицо</td>
+</tr>
+<tr>
+<td><code>ALIEN</code></td>
+<td>Иностранный гражданин</td>
+</tr>
+</tbody></table>
+<h2 id='resultcode'>ResultCode</h2>
+<table><thead>
+<tr>
+<th>ResultCode</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SUCCESS</code></td>
+<td>0</td>
+<td>Успешно</td>
+</tr>
+<tr>
+<td><code>WRONG_INVOICE</code></td>
+<td>1</td>
+<td>Инвойс с указанным номером отсутствует</td>
+</tr>
+<tr>
+<td><code>EXPIRED</code></td>
+<td>2</td>
+<td>Срок действия инвойса с указанным номером истек</td>
+</tr>
+<tr>
+<td><code>INSUFFICIENT_AMOUNT</code></td>
+<td>3</td>
+<td>Неверная сумма оплаты</td>
+</tr>
+<tr>
+<td><code>WRONG_INN</code></td>
+<td>4</td>
+<td>Указанный ИНН отсутствует в базе данных Государственного налогового комитета</td>
+</tr>
+<tr>
+<td><code>NO_SERVICE</code></td>
+<td>5</td>
+<td>Cервис недоступен по техническим причинам</td>
+</tr>
+<tr>
+<td><code>INVOICE_PAID</code></td>
+<td>6</td>
+<td>Сумма по инвойсу уже погашена</td>
+</tr>
+<tr>
+<td><code>INVOICE_CLOSED</code></td>
+<td>7</td>
+<td>Инвойс закрыт или отменен</td>
+</tr>
+<tr>
+<td><code>EXISTING_BID</code></td>
+<td>8</td>
+<td>Уже был такой платёж</td>
+</tr>
+<tr>
+<td><code>WRONG_NAME</code></td>
+<td>9</td>
+<td>Номер инвойса не указан</td>
+</tr>
+<tr>
+<td><code>WRONG_AMOUNT</code></td>
+<td>10</td>
+<td>Неверная сумма оплаты</td>
+</tr>
+<tr>
+<td><code>WRONG_CURRENCY</code></td>
+<td>11</td>
+<td>Неверно указана валюта</td>
+</tr>
+<tr>
+<td><code>WRONG_RESULT_CODE</code></td>
+<td>12</td>
+<td>Неверный код результата</td>
+</tr>
+<tr>
+<td><code>WRONG_SUPPLIER</code></td>
+<td>13</td>
+<td>Неверный код поставщика</td>
+</tr>
+<tr>
+<td><code>WRONG_PAYMENT_CODE</code></td>
+<td>14</td>
+<td>Неверный вид оплаты</td>
+</tr>
+<tr>
+<td><code>REQUEST_NOT_VALID_DATE</code></td>
+<td>15</td>
+<td>Неверная дата</td>
+</tr>
+<tr>
+<td><code>REQUEST_NOT_VALID_REQUIRED_IS_EMPTY</code></td>
+<td>16</td>
+<td>Некорректный запрос. Обязательные поля пусты</td>
+</tr>
+<tr>
+<td><code>BID_NOT_FOUND</code></td>
+<td>17</td>
+<td>Неверный номер бланка BID</td>
+</tr>
+<tr>
+<td><code>WRONG_PAYMENT</code></td>
+<td>18</td>
+<td>Неверно указаны банковские реквизиты плательщика или получателя</td>
+</tr>
+<tr>
+<td><code>AMOUNT_NOT_EQUAL</code></td>
+<td>19</td>
+<td>Сумма оплаты должна быть равна сумме инвойса</td>
+</tr>
+<tr>
+<td><code>AMOUNT_EXCEEDS</code></td>
+<td>20</td>
+<td>Сумма оплаты превышает остаток суммы по инвойсу</td>
+</tr>
+<tr>
+<td><code>AMOUNT_BELOW_MINIMUM</code></td>
+<td>21</td>
+<td>Остаток при оплате нарушает возможность оплаты по минимальной сумме</td>
+</tr>
+<tr>
+<td><code>AMOUNT_CONSTRAINS_REMAIN</code></td>
+<td>22</td>
+<td>Остаток при оплате нарушает возможность оплаты по минимальной сумме</td>
+</tr>
+<tr>
+<td><code>WRONG_DOC</code></td>
+<td>23</td>
+<td>Номер тех.пасспорт не указан</td>
+</tr>
+<tr>
+<td><code>WRONG_VIN</code></td>
+<td>23</td>
+<td>Номер VIN не указан</td>
+</tr>
+</tbody></table>
+<h1 id='errors'>Errors</h1>
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Your request is invalid.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- Your API key is wrong.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- The specified kitten could not be found.</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable -- Insufficient value</td>
+</tr>
+<tr>
+<td>409</td>
+<td>Conflict</td>
+</tr>
+<tr>
+<td>417</td>
+<td>Expectation Failed</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell--sandbox">sandbox</a>
+                <a href="#" data-language-name="shell--production">production</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
